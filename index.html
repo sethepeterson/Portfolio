@@ -6,6 +6,8 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 
 	<title>Seth Peterson</title>
+	<link rel="icon" type="image/icon" href="media/logos/SpLogo.PNG">
+
 	<link href="styles/bulma-0.7.1/css/bulma.css" rel="stylesheet">
 	<link href="styles/hover-effects.css" ref="stylesheet">
 	<link href="styles/styles.css" rel="stylesheet">
@@ -14,7 +16,11 @@
 </head>
 
 <body>
-
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/6.2.2/firebase-app.js"></script>
+		
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
 
 	<!-- Navigation -->
 	<nav class="navbar has-shadow">
@@ -22,9 +28,14 @@
 			<div class="navbar-end">
 				<div class="navbar-item">
 					<p class="control">
-            <a class="button is-primary is-outlined is-rounded" href="#" disabled>
+            <!-- <a class="button is-primary is-outlined is-rounded" href="#" disabled>
               <span>
                 Contact
+              </span>
+			</a> -->
+			<a class="button is-primary is-outlined is-rounded" href="media/downloads/ResumeSethPeterson.pdf" target="_blank">
+              <span>
+                Resume
               </span>
             </a>
 					</p>
@@ -73,10 +84,11 @@
 						<br>
 						<p class="list-title has-text-primary">Languages I speak:</p>
 						<ul style="list-style: none;">
+							<li>Java</li>
 							<li>C#</li>
 							<li>C++</li>
 							<li>HTML</li>
-							<li>TypeScript</li>
+							<li>XAML</li>
 							<li>JavaScript</li>
 							<li>SQL</li>
 						</ul>
@@ -84,12 +96,13 @@
 
 						<p class="list-title has-text-primary">Technology I use:</p>
 						<ul style="list-style: none;">
+							<li>Android Studio</li>
 							<li>Visual Studio</li>
 							<li>Atom</li>
 							<li>Bulma</li>
 							<li>Angular 6</li>
 							<li>Windows Presentation Foundation</li>
-							<li>GitHub</li>
+							<li>Git</li>
 							<li>FireBase</li>
 						</ul>
 					</div>
@@ -122,6 +135,16 @@
 
 				<div class="column is-one-third">
 					<div class="tags is-centered is-marginless">
+						<span class="tag is-primary">Python | PRAW</span>
+						<span class="tag link is-dark"><a href="https://github.com/sethepeterson/Reddit-Climbing-Route-Bot" style="text-decoration: none; color: #FFFFFF;" target="_blank">GitHub</a></span>
+					</div>
+					<figure class="image link is-3by2">
+						<a href="https://www.reddit.com/user/ClimbingRouteBot" target="_blank"><img src="media/logos/RedditBotLogo.jpg"></a>
+					</figure>
+				</div>
+
+				<div class="column is-one-third">
+					<div class="tags is-centered is-marginless">
 						<span class="tag is-primary">C# | WPF</span>
 						<span class="tag link is-dark"><a href="https://github.com/sethepeterson/Patheo" style="text-decoration: none; color: #FFFFFF;" target="_blank">GitHub</a></span>
 					</div>
@@ -151,25 +174,6 @@
 				<br>
 				<h1 class="title">Photography Shots</h1>
 				<div class="columns is-centered is-multiline">
-
-
-
-					<!-- <div class="column is-4">
-						<div class="card is-shady">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img src="https://source.unsplash.com/RWnpyGtY1aU" alt="Placeholder image" class="modal-button" data-target="modal-image2">
-								</figure>
-							</div>
-							<div class="card-content">
-								<div class="content">
-									<h4>Click on image above</h4>
-									<p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-									<span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
-								</div>
-							</div>
-						</div>
-					</div> -->
 
 					<div class="column is-one-quarter">
 						<div class="tags is-centered is-marginless">
@@ -209,19 +213,19 @@
 
 					<div class="column is-one-quarter">
 						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Isle Royal, Michigan</span>
+							<span class="tag is-primary">Unkown, Sweden</span>
 						</div>
 						<figure class="image is-3by2">
-							<img src="media/images/IsleRoyal2018Capt.jpg">
+							<img src="media/images/SwedenCar.jpg">
 						</figure>
 					</div>
 
 					<div class="column is-one-quarter">
 						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Unkown, Sweden</span>
+							<span class="tag is-primary">Isle Royal, Michigan</span>
 						</div>
 						<figure class="image is-3by2">
-							<img src="media/images/SwedenCar.jpg">
+							<img src="media/images/IsleRoyal2018Capt.jpg">
 						</figure>
 					</div>
 
@@ -244,12 +248,12 @@
 					</div>
 				</div>
 
-				<!-- See More Button -->
+				<!-- See More Button
 				<div class="columns is-centered">
 					<div class="column">
 						<a class="button is-primary is-outlined is-rounded" href="#" disabled>See more</a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -263,7 +267,8 @@
           <div class="field">
 
 						<span class="is-size-2">
-							<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded">
+							<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded"
+							   href="https://github.com/sethepeterson" target="_blank">
 								<span class="icon">
 									<i class="fab fa-github"></i>
 								</span>
@@ -271,20 +276,21 @@
 						</span>
 
 						<span class="is-size-2">
-							<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded">
+							<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded"
+							   href="https://www.linkedin.com/in/seth-peterson-397b22139/" target="_blank">
 								<span class="icon">
 									<i class="fab fa-linkedin-in"></i>
 								</span>
 							</a>
 						</span>
 
-						<span class="is-size-2">
+						<!-- <span class="is-size-2">
 							<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded">
 								<span class="icon">
 									<i class="fab fa-instagram"></i>
 								</span>
 							</a>
-						</span>
+						</span> -->
 
           </div>
         </div>
