@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -16,14 +17,11 @@
 	</head>
 
 	<body>
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="/__/firebase/6.2.2/firebase-app.js"></script>
-			
-		<!-- Initialize Firebase -->
 		<script src="/__/firebase/init.js"></script>
 
 		<!-- Hero -->
-		<div class="hero is-medium is-primary is-bold">
+		<div class="hero is-fullheight is-primary is-bold snapPoint">
 			<div class="hero-head">
 				<nav class="navbar">
 					<div class="container">
@@ -40,7 +38,7 @@
 											<i class="fab fa-linkedin-in"></i>
 										</span>
 									</a>
-									<a class="button is-primary is-inverted" href="media/downloads/ResumeSethPeterson.pdf" target="_blank">
+									<a class="button is-rounded is-primary is-inverted" href="media/downloads/ResumeSethPeterson.pdf" target="_blank">
 										<span>Resume</span>
 									</a>
 								</span>
@@ -62,260 +60,269 @@
 								Soon-to-be Computer Science B.S. graduate at the University of Kansas with experience
 								in mobile and desktop application development.
 							</h2>
+							<a class="button is-primary is-inverted is-rounded is-outlined is-inline-block" href="#body">
+								<span>See More</span>
+								<span class="icon">
+									<i class="fas fa-chevron-down"></i>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- Body -->
+		<div class="section snapPoint" id="body">
 
-		<!-- Bios & Projects -->
-		<div class="section">
-			<div class="container">
-
-				<div class="box">
-					<div class="columns is-narrow is-centered">
-
-						<div class="column has-text-centered" style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
-							<h1 class="title is-size-4 is-spaced">Designer</h1>
-							<p>I prefer simple UIs and responsive animations.</p>
-							<br>
-							<p class="list-title has-text-primary">Tools I work with:</p>
-							<ul style="list-style: none;">
-								<li>Figma</li>
-								<li>Material Design</li>
-								<li>Photoshop</li>
-								<li>Pen & Paper</li>
-							</ul>
+			<!-- Bios & Projects -->
+			<div>
+				<div class="container">
+					<div class="box">
+						<div class="columns is-narrow is-centered">
+			
+							<div class="column has-text-centered"
+								style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
+								<h1 class="title is-size-4 is-spaced">Designer</h1>
+								<p>I prefer simple UIs and responsive animations.</p>
+								<br>
+								<p class="list-title has-text-primary">Tools I work with:</p>
+								<ul style="list-style: none;">
+									<li>Figma</li>
+									<li>Material Design</li>
+									<li>Photoshop</li>
+									<li>Pen & Paper</li>
+								</ul>
+							</div>
+			
+							<div class="column has-text-centered"
+								style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
+								<h1 class="title is-size-4 is-spaced">Developer</h1>
+								<p>I value well-documented code and flexible solutions.</p>
+								<br>
+								<p class="list-title has-text-primary">Languages I write:</p>
+								<ul style="list-style: none;">
+									<li>Kotlin</li>
+									<li>Java</li>
+									<li>C#</li>
+									<li>C++</li>
+									<li>Python</li>
+									<li>HTML</li>
+								</ul>
+								<br>
+			
+								<p class="list-title has-text-primary">Technologies I use:</p>
+								<ul style="list-style: none;">
+									<li>Android SDK</li>
+									<li>Windows Presentation Foundation</li>
+									<li>Bulma</li>
+									<li>Git</li>
+									<li>FireBase</li>
+								</ul>
+							</div>
+			
+							<div class="column has-text-centered"
+								style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
+								<h1 class="title is-size-4 is-spaced">Human</h1>
+								<p>It's always a good time.™</p>
+								<br>
+								<p class="list-title has-text-primary">Stuff I do:</p>
+								<ul style="list-style: none;">
+									<li>Mountain Biking</li>
+									<li>Rock Climbing</li>
+									<li>Camping</li>
+									<li>Reading</li>
+									<li>Photography</li>
+								</ul>
+							</div>
+			
 						</div>
-
-						<div class="column has-text-centered" style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
-							<h1 class="title is-size-4 is-spaced">Developer</h1>
-							<p>I value well-documented code and flexible solutions.</p>
-							<br>
-							<p class="list-title has-text-primary">Languages I write:</p>
-							<ul style="list-style: none;">
-								<li>Kotlin</li>
-								<li>Java</li>
-								<li>C#</li>
-								<li>C++</li>
-								<li>Python</li>
-								<li>HTML</li>
-							</ul>
-							<br>
-
-							<p class="list-title has-text-primary">Technologies I use:</p>
-							<ul style="list-style: none;">
-								<li>Android SDK</li>
-								<li>Windows Presentation Foundation</li>
-								<li>Bulma</li>
-								<li>Git</li>
-								<li>FireBase</li>
-							</ul>
-						</div>
-
-						<div class="column has-text-centered" style="border-left: 1px solid #D3D3D3; border-right: 1px solid #D3D3D3;">
-							<h1 class="title is-size-4 is-spaced">Human</h1>
-							<p>It's always a good time.™</p>
-							<br>
-							<p class="list-title has-text-primary">Stuff I do:</p>
-							<ul style="list-style: none;">
-								<li>Mountain Biking</li>
-								<li>Rock Climbing</li>
-								<li>Camping</li>
-								<li>Reading</li>
-								<li>Photography</li>
-							</ul>
-						</div>
-
 					</div>
+			
 				</div>
-
 			</div>
-
+			
 			<!-- Development Projects-->
-			<div class="container has-text-centered">
-				<br>
-				<br>
-				<h1 class="title">Development Projects</h1>
-
-				<div class="columns is-centered">
-
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Python | PRAW</span>
-							<span class="tag link is-dark"><a href="https://github.com/sethepeterson/Reddit-Climbing-Route-Bot" style="text-decoration: none; color: #FFFFFF;"
-									target="_blank">GitHub</a></span>
+			<div class="snapPoint">
+				<div class="container has-text-centered">
+					<br>
+					<br>
+					<h1 class="title">Development Projects</h1>
+			
+					<div class="columns is-centered">
+			
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Python | PRAW</span>
+								<span class="tag link is-dark"><a href="https://github.com/sethepeterson/Reddit-Climbing-Route-Bot"
+										style="text-decoration: none; color: #FFFFFF;" target="_blank">GitHub</a></span>
+							</div>
+							<figure class="image link is-3by2">
+								<a href="https://www.reddit.com/user/ClimbingRouteBot" target="_blank"><img
+										src="media/logos/RedditBotLogo.jpg"></a>
+							</figure>
 						</div>
-						<figure class="image link is-3by2">
-							<a href="https://www.reddit.com/user/ClimbingRouteBot" target="_blank"><img src="media/logos/RedditBotLogo.jpg"></a>
-						</figure>
-					</div>
-				
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Kotlin | Android SDK</span>
-							<span class="tag is-dark data-tooltip">Google Play</span>
+			
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Kotlin | Android SDK</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/logos/Terra.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/logos/Terra.jpg">
-						</figure>
-					</div>
-
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">JS | Angular 6</span>
-							<span class="tag link is-dark"><a href="https://github.com/BlakeJordan/Minesweeper" style="text-decoration: none; color: #FFFFFF;"
-								 target="_blank">GitHub</a></span>
-					
+			
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">JS | Angular 6</span>
+								<span class="tag link is-dark"><a href="https://github.com/BlakeJordan/Minesweeper"
+										style="text-decoration: none; color: #FFFFFF;" target="_blank">GitHub</a></span>
+			
+							</div>
+							<figure class="image link is-3by2">
+								<a href="https://minesweeper-project.firebaseapp.com/" target="_blank"><img
+										src="media/logos/MinesweeperLogo.jpg"></a>
+							</figure>
 						</div>
-						<figure class="image link is-3by2">
-							<a href="https://minesweeper-project.firebaseapp.com/" target="_blank"><img src="media/logos/MinesweeperLogo.jpg"></a>
-						</figure>
+			
 					</div>
-				
+			
 				</div>
-
 			</div>
-
+			
 			<!-- Design work-->
-			<div class="container has-text-centered">
-				<br>
-				<br>
-				<br>
-				<h1 class="title">Design Work</h1>
-				<div class="columns is-centered is-multiline">
+			<div class="snapPoint">
+				<div class="container has-text-centered">
+					<br>
+					<br>
+					<br>
+					<h1 class="title">Design Work</h1>
+					<div class="columns is-centered is-multiline">
 			
-					<div class="column is-half">
+						<div class="column is-half">
 			
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Boba Fett</span>
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Boba Fett</span>
+							</div>
+							<figure class="image is-fullwidth">
+								<img src="media/images/design/BobaFett.jpg">
+							</figure>
+			
+							<br>
+							<br>
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">The Arrow</span>
+							</div>
+							<figure class="image is-fullwidth">
+								<img src="media/images/design/TheArrow.jpg">
+							</figure>
+			
 						</div>
-						<figure class="image is-fullwidth">
-							<img src="media/images/design/BobaFett.jpg">
-						</figure>
-			
-						<br>
-						<br>
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">The Arrow</span>
-						</div>
-						<figure class="image is-fullwidth">
-							<img src="media/images/design/TheArrow.jpg">
-						</figure>
 			
 					</div>
-			
 				</div>
 			</div>
-
+			
 			<!-- Photography Shots-->
-			<div class="container has-text-centered">
-				<br>
-				<br>
-				<br>
-				<h1 class="title">Photography Shots</h1>
-				<div class="columns is-centered is-multiline">
+			<div class="snapPoint">
+				<div class="container has-text-centered">
+					<br>
+					<br>
+					<br>
+					<h1 class="title">Photography Shots</h1>
+					<div class="columns is-centered is-multiline">
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Reykjavik, Iceland</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Reykjavik, Iceland</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/IcelandArmyMan.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/IcelandArmyMan.jpg">
-						</figure>
-					</div>
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Lindsborg, Kansas</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Lindsborg, Kansas</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/HomeSunset.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/HomeSunset.jpg">
-						</figure>
-					</div>
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Uppsala, Sweden</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Uppsala, Sweden</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/SwedenCar.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/SwedenCar.jpg">
-						</figure>
-					</div>
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Isle Royal, Michigan</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Isle Royal, Michigan</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/IsleRoyal2018Capt.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/IsleRoyal2018Capt.jpg">
-						</figure>
-					</div>
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Virgin, Utah</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Virgin, Utah</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/VirginUtah.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/VirginUtah.jpg">
-						</figure>
-					</div>
 			
-					<div class="column is-one-third">
-						<div class="tags is-centered is-marginless">
-							<span class="tag is-primary">Isle Royal, Michgan</span>
+						<div class="column is-one-third">
+							<div class="tags is-centered is-marginless">
+								<span class="tag is-primary">Isle Royal, Michgan</span>
+							</div>
+							<figure class="image is-3by2">
+								<img src="media/images/photography/IsleRoyal2018Frog.jpg">
+							</figure>
 						</div>
-						<figure class="image is-3by2">
-							<img src="media/images/photography/IsleRoyal2018Frog.jpg">
-						</figure>
-					</div>
 			
+					</div>
 				</div>
-			
-			
-				<!-- See More Button
-				<div class="columns is-centered">
-					<div class="column">
-						<a class="button is-primary is-outlined is-rounded" href="#" disabled>See more</a>
-					</div>
-				</div> -->
 			</div>
-			
 		</div>
 
 		<!-- Footer -->
 		<footer class="section has-background-primary">
 			<div class="container is-narrow">
-
+		
 				<div class="columns is-centered has-text-centered">
 					<div class="column">
 						<div class="field">
-
+		
 							<span class="is-size-2">
 								<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded"
-								href="https://github.com/sethepeterson" target="_blank">
+									href="https://github.com/sethepeterson" target="_blank">
 									<span class="icon">
 										<i class="fab fa-github"></i>
 									</span>
 								</a>
 							</span>
-
+		
 							<span class="is-size-2">
 								<a class="button socialLink is-medium is-primary is-inverted is-outlined is-rounded"
-								href="https://www.linkedin.com/in/seth-erik-peterson/" target="_blank">
+									href="https://www.linkedin.com/in/seth-erik-peterson/" target="_blank">
 									<span class="icon">
 										<i class="fab fa-linkedin-in"></i>
 									</span>
 								</a>
 							</span>
 						</div>
-						
+		
 						<div class="field">
-						
+		
 							<span class="is-size-2">
 								<a class="button socialLink is-medium is-primary is-inverted is-rounded"
-								href="media/downloads/ResumeSethPeterson.pdf" target="_blank">
+									href="media/downloads/ResumeSethPeterson.pdf" target="_blank">
 									<span>
 										Resume
 									</span>
@@ -324,7 +331,7 @@
 						</div>
 					</div>
 				</div>
-
+		
 				<div class="columns is-centered has-text-centered">
 					<div class="column">
 						<div class="content has-text-light">
@@ -336,8 +343,9 @@
 						</div>
 					</div>
 				</div>
-
+		
 			</div>
 		</footer>
+
 	</body>
 </html>
